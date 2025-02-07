@@ -1,0 +1,34 @@
+[
+  {
+    "Name": "mastervolume",
+    "Level": 20,
+    "Volume_up": null,
+    "Volume_down": null,
+    "Volume_mute": null,
+    "IsMute": false
+  },
+  {
+    "Name": "mediavolume",
+    "Level": 40,
+    "Volume_up": null,
+    "Volume_down": null,
+    "Volume_mute": null,
+    "IsMute": false
+  },
+  {
+    "Name": "gamesvolume",
+    "Level": 100,
+    "Volume_up": null,
+    "Volume_down": null,
+    "Volume_mute": null,
+    "IsMute": false
+  },
+  {
+    "Name": "auxvolume",
+    "Level": 100,
+    "Volume_up": null,
+    "Volume_down": null,
+    "Volume_mute": null,
+    "IsMute": false
+  }
+]
