@@ -27,6 +27,7 @@
 <h4><b><em>The GUI</em></b></h4>
 <p>
   Only active audio sessions outputting audio are shown in the GUI. But, there is an option to show every single audio session stored in the configuration file. 
-  By right-clicking a session, you get four options. You can change the display name and reset it to it's default value. You have an option to move the session to one of the four groups. 
-  And you have the option to hide the audio session from displaying in the GUI. Lastly, the GUI displays the volume level of each group at the bottom. <br><em>The Edit Keybinds button has no functionality yet.</em>
+  There is also an option to change keybinds to increase, decrease, and mute the group volumes. By right-clicking a session, you get four options. You can change 
+  the display name and reset it to it's default value. You have an option to move the session to one of the four groups. And you have the option to hide the audio 
+  session from displaying in the GUI. Lastly, the GUI displays the volume level of each group at the bottom. 
 </p>
