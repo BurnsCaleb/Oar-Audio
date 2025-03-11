@@ -18,7 +18,7 @@ namespace Oar_Audio.Utilities
             string json = JsonConvert.SerializeObject(sources, Newtonsoft.Json.Formatting.Indented);
 
             // Write JSON to the file
-            System.IO.File.WriteAllText(@"C:\Program Files\Oar Audio\conf\sources_conf.json", json);
+            System.IO.File.WriteAllText(@"Resources/conf/sources_conf.json", json);
         }   
    
         public static void WriteToVolumes(List<Volume> data)
@@ -35,14 +35,14 @@ namespace Oar_Audio.Utilities
                 string json = JsonConvert.SerializeObject(volumes, Newtonsoft.Json.Formatting.Indented);
 
                 // Write JSON to the file
-                System.IO.File.WriteAllText(@"C:\Program Files\Oar Audio\conf\volumes_conf.json", json);
+                System.IO.File.WriteAllText(@"Resources/conf/volumes_conf.json", json);
             }
         }
 
         public static List<Source> GetSources()
         {
             // Open and read the JSON file
-            string jsonData = System.IO.File.ReadAllText(@"C:\Program Files\Oar Audio\conf\sources_conf.json");
+            string jsonData = System.IO.File.ReadAllText(@"Resources/conf/sources_conf.json");
 
 
             // Deserialize JSON data into a list of Source objects
@@ -53,7 +53,7 @@ namespace Oar_Audio.Utilities
         public static List<Volume> GetVolumes()
         {
             // Open and read the JSON file
-            string jsonData = System.IO.File.ReadAllText(@"C:\Program Files\Oar Audio\conf\volumes_conf.json");
+            string jsonData = System.IO.File.ReadAllText(@"Resources/conf/volumes_conf.json");
 
             // Deserialize JSON data into a list of Source objects
             List<Volume> volumes = JsonConvert.DeserializeObject<List<Volume>>(jsonData);

@@ -1,0 +1,73 @@
+[
+  {
+    "Name": "mastervolume",
+    "Level": 25,
+    "VolumeUp": [
+      "Control",
+      "Up"
+    ],
+    "VolumeDown": [
+      "Control",
+      "Down"
+    ],
+    "VolumeMute": [
+      "Control",
+      "Left"
+    ],
+    "IsMute": false
+  },
+  {
+    "Name": "mediavolume",
+    "Level": 100,
+    "VolumeUp": [
+      "Alt",
+      "Up"
+    ],
+    "VolumeDown": [
+      "Alt",
+      "Down"
+    ],
+    "VolumeMute": [
+      "Alt",
+      "Left"
+    ],
+    "IsMute": false
+  },
+  {
+    "Name": "gamesvolume",
+    "Level": 100,
+    "VolumeUp": [
+      "Shift",
+      "Up"
+    ],
+    "VolumeDown": [
+      "Shift",
+      "Down"
+    ],
+    "VolumeMute": [
+      "Shift",
+      "Left"
+    ],
+    "IsMute": false
+  },
+  {
+    "Name": "auxvolume",
+    "Level": 100,
+    "VolumeUp": [
+      "Control",
+      "Shift",
+      "Up"
+    ],
+    "VolumeDown": [
+      "Control",
+      "Shift",
+      "Down"
+    ],
+    "VolumeMute": [
+      "Control",
+      "Shift",
+      "Left"
+    ],
+    "IsMute": false
+  }
+]

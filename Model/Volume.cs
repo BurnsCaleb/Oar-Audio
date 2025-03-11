@@ -1,15 +1,17 @@
 ﻿using System.ComponentModel;
+using System.Text.Json.Serialization;
+using Oar_Audio.Utilities.Hotkey;
 
 namespace Oar_Audio.Model
 {
     public class Volume:INotifyPropertyChanged
     {
         public string Name { get; set; }
-        public int _level { get; set; }
+        private int _level { get; set; }
 
         public int Level
         {
-            get => _level;
+            get { return _level; }
             set
             {
                 if (_level != value)
@@ -21,13 +23,44 @@ namespace Oar_Audio.Model
             }
         }
 
-        public string VolumeUp { get; set; } // Keybind
-        public string VolumeDown { get; set; } // Keybind
-        public string VolumeMute { get; set; } // Keybind
+        private List<string> _volumeUp;
+        private List<string> _volumeDown;
+        private List<string> _volumeMute;
+
+        public List<string> VolumeUp 
+        { 
+            get { return _volumeUp; }
+            set 
+            {
+                _volumeUp = value;
+                OnPropertyChanged(nameof(VolumeUp));
+            }
+        }
+
+        public List<string> VolumeDown 
+        { 
+            get { return _volumeDown; } 
+            set 
+            { 
+                _volumeDown = value;
+                OnPropertyChanged(nameof(VolumeDown));
+            }
+        }
+
+        public List<string> VolumeMute 
+        { 
+            get { return _volumeMute; }
+            set
+            {
+                _volumeMute = value;
+                OnPropertyChanged(nameof(VolumeMute));
+            }
+        
+        }
         public bool _isMute { get; set; }
         public bool IsMute
         {
-            get => _isMute;
+            get { return _isMute; }
             set
             {
                 if (_isMute != value)
@@ -39,7 +72,7 @@ namespace Oar_Audio.Model
             }
         }
 
-        public Volume(string Name, int Level, string VolumeUp, string VolumeDown, string VolumeMute, bool IsMute)
+        public Volume(string Name, int Level, List<string> VolumeUp, List<string> VolumeDown, List<string> VolumeMute, bool IsMute)
         {
             this.Name = Name;
             this.Level = Level;
@@ -55,9 +88,9 @@ namespace Oar_Audio.Model
             {
                 { "Name", Name },
                 { "Level", Level },
-                { "Volume_up", VolumeUp },
-                { "Volume_down", VolumeDown },
-                { "Volume_mute", VolumeMute },
+                { "VolumeUp", VolumeUp },
+                { "VolumeDown", VolumeDown },
+                { "VolumeMute", VolumeMute },
                 { "IsMute", IsMute}
             };
         }

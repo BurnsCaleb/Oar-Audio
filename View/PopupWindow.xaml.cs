@@ -14,7 +14,7 @@ using System.Windows.Shapes;
 using System.Windows.Threading;
 using Oar_Audio.Model;
 
-namespace Oar_Audio
+namespace Oar_Audio.View
 {
     /// <summary>
     /// Interaction logic for PopupWindow.xaml

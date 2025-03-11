@@ -88,6 +88,11 @@ namespace Oar_Audio.Utilities.Hotkey
             Hotkeys.Remove(hotkey);
         }
 
+        public static void RemoveAllHotkeys()
+        {
+            Hotkeys.Clear();
+        }
+
         /// <summary>
         /// Checks if there are any modifiers are pressed. If so, it checks through every
         /// Hotkey and matches their Modifier/Key. If they both match, and the hotkey allows
